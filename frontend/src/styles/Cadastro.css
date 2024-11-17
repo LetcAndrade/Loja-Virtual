@@ -1,0 +1,26 @@
+
+.pagCadastro{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 6px rgba(41, 41, 41, 0.253);
+  margin: 1rem auto; 
+  width: 500px; 
+  height: 400px; 
+  max-width: 70%; 
+  box-sizing: border-box;
+}
+
+h1{
+    align-self: center;
+    margin-bottom: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
