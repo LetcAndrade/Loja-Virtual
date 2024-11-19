@@ -1,0 +1,179 @@
+.pag {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima para evitar que fique menor que a janela */
+    background-color: rgb(228, 245, 239);
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carrinho-container {
+    position: relative;
+}
+
+.bolinha {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(196, 17, 17);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.filtro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border: 1px solid rgba(133, 133, 133, 0.411);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.produtos p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.pag p {
+    color: black;
+    font-size: 20px;
+}
+
+select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+    background: transparent;
+}
+
+.cardProduto {
+    background-color: white;
+    margin: 1rem ;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cardProduto img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.cardDescricao {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.cardDescricao h2 {
+    font-size: 22px;
+    margin: 0 0 8px;
+    color: #2e7d32;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+.cardDescricao h2:hover {
+    color: rgba(46, 202, 32, 0.623);
+}
+
+.cardDescricao p {
+    font-size: 15px;
+    margin: 0;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+.cardValor {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.cardValor span {
+    font-size: 28px;
+    font-weight:500;
+    color: #212422b7;
+    border-top: 1px solid rgba(26, 25, 25, 0.226);
+    padding-top: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cardValor button {
+    background: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cardValor button:hover {
+    background-color: #4b4b4b34;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+
+.card-link {
+    text-decoration: none; 
+    color: inherit;
+  }
