@@ -88,7 +88,7 @@ function Login()
           <div className='cadastro'>
           <p>Não possui conta?</p>
           <Link to="/cadastro">
-          <button type='button'>Cadastrar</button>
+          <button type='button' >Cadastrar</button>
           </Link>
           </div>
         </div>
