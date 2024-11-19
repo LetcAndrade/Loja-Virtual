@@ -1,7 +1,7 @@
 .pag {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Altura mínima para evitar que fique menor que a janela */
+    min-height: 100vh;
     background-color: rgb(228, 245, 239);
     margin: 0;
     padding: 0;
@@ -24,8 +24,12 @@
     margin: 0;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
+.cabecalho p:hover {
+    color: rgba(50, 122, 65, 0.623);
+}
 .carrinho-container {
     position: relative;
 }

@@ -9,6 +9,7 @@ import Login from './telas/Login.jsx';
 import Cadastro from './telas/Cadastro.jsx';
 import Principal from './telas/Principal.jsx';
 import Produto from './telas/Produto.jsx';
+import Conta from './telas/Conta.jsx';
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: 'Produto',
         element: <Produto/>
+      },
+      {
+        path: 'Conta',
+        element: <Conta/>
       },
     ]
   },

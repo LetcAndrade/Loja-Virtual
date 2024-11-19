@@ -1,0 +1,50 @@
+[
+  {
+    "id": 2,
+    "username": "Lucas",
+    "email": "lucas@teste.com",
+    "password": "abcdef"
+  },
+  {
+    "id": 3,
+    "username": "Ana",
+    "email": "ana@teste.com",
+    "password": "password123"
+  },
+  {
+    "id": 4,
+    "username": "Carlos",
+    "email": "carlos@teste.com",
+    "password": "senha321"
+  },
+  {
+    "id": 5,
+    "username": "Maria",
+    "email": "maria@teste.com",
+    "password": "123abc"
+  },
+  {
+    "id": 6,
+    "username": "Roberto",
+    "email": "roberto@teste.com",
+    "password": "qwerty123"
+  },
+  {
+    "id": 7,
+    "username": "Juliana",
+    "email": "juliana@teste.com",
+    "password": "juliana123"
+  },
+  {
+    "id": 8,
+    "username": "Felipe",
+    "email": "felipe@teste.com",
+    "password": "testando123"
+  },
+  {
+    "id": 9,
+    "username": "Eduardo",
+    "email": "eduardo@teste.com",
+    "password": "pass1234"
+  }
+]
