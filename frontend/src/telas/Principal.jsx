@@ -3,9 +3,22 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Principal.css';
 
 function Principal() {
+<<<<<<< HEAD
   const [cartCount, setCartCount] = useState([]);
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+=======
+  const [cartCount, setCartCount] = useState(0);
+  const navigate = useNavigate();
+
+  // Verifica se o usuário está autenticado
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem('isAuthenticated');
+    if (isAuthenticated !== 'true') {
+      navigate('/');
+    }
+  }, [navigate]);
+>>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
 
   useEffect(() => {
     const fetchProducts = async () => 
@@ -45,6 +58,14 @@ function Principal() {
     localStorage.removeItem('isAuthenticated');
     navigate('/');
   };
+<<<<<<< HEAD
+=======
+  
+  const handleLogout = () => {
+    localStorage.removeItem('isAuthenticated');
+    navigate('/');
+  };
+>>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
   return (
     <>
       <div className="pag">
@@ -88,6 +109,7 @@ function Principal() {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="listaProdutos">
           {products.map((product) => (
             <div key={product.id} className="cardProduto">
@@ -113,6 +135,30 @@ function Principal() {
               </div>
             </div>
           ))}
+=======
+        <div className="cardProduto">
+          <div>
+            <img
+              src="https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/tadeaioo/catalog/prime/preto-nude/tenis-feminino-academia-ultrabone-ultra-prime-preto-nude-2.jpg"
+              alt="Produto"
+            />
+          </div>
+          <div className="cardDescricao">
+            <Link to="/Produto" className="card-link">
+              <h2>Nome Produto</h2>
+            </Link>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              aspernatur esse quis eum accusantium ex quo aliquam commodi
+              vero rerum! Libero ipsam ducimus porro, saepe animi nulla
+              molestias iusto sit!
+            </p>
+            <div className="cardValor">
+              <span>$29.99</span>
+              <button onClick={addToCart}>Adiciona</button>
+            </div>
+          </div>
+>>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
         </div>
       </div>
       <footer>
