@@ -84,12 +84,8 @@ app.delete('/conta/:id', (req, res) => {
     }
   });
 
-<<<<<<< HEAD
 
   //retornar o atual usuário
-=======
-  //retornar o e-mail atual de um usuário
->>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
   app.get('/conta/:id', (req, res) => {
     const userId = parseInt(req.params.id);
   
@@ -103,15 +99,11 @@ app.delete('/conta/:id', (req, res) => {
         return res.status(404).json({ message: 'Usuário não encontrado' });
       }
   
-<<<<<<< HEAD
       res.status(200).json({
         email: usuario.email,
         username: usuario.username,
         password: usuario.password
       });
-=======
-      res.status(200).json({ email: usuario.email });
->>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
     } catch (err) {
       console.error(err);
       res.status(500).json({ message: 'Erro ao buscar o e-mail do usuário' });
@@ -119,11 +111,7 @@ app.delete('/conta/:id', (req, res) => {
   });
 
   //atualizar o e-mail atual de um usuário
-<<<<<<< HEAD
   app.patch('/conta/:id/email', (req, res) => {
-=======
-  app.patch('/conta/:id', (req, res) => {
->>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
     const userId = parseInt(req.params.id);
     const { email } = req.body;
   
@@ -153,7 +141,6 @@ app.delete('/conta/:id', (req, res) => {
       res.status(500).json({ message: 'Erro ao atualizar o e-mail do usuário' });
     }
   });
-<<<<<<< HEAD
 
 
     //atualizar o nome atual de um usuário
@@ -221,5 +208,3 @@ app.delete('/conta/:id', (req, res) => {
       }
     });
   
-=======
->>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4

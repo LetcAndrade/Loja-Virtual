@@ -46,14 +46,11 @@
     "username": "Leticia",
     "email": "lcarneiroandrade3@gmail.com",
     "password": "1234"
-<<<<<<< HEAD
   },
   {
     "id": 9,
     "username": "Teste",
     "email": "teste@email.com",
     "password": "1234"
-=======
->>>>>>> 48212ec7a6c3ab3a1e5d8614e87661c1cd8635a4
   }
 ]
