@@ -1,7 +1,7 @@
 .pag {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Altura mínima para evitar que fique menor que a janela */
+    min-height: 100vh;
     background-color: rgb(228, 245, 239);
     margin: 0;
     padding: 0;
@@ -24,8 +24,12 @@
     margin: 0;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
+.cabecalho p:hover {
+    color: rgba(50, 122, 65, 0.623);
+}
 .carrinho-container {
     position: relative;
 }
@@ -91,6 +95,13 @@ select {
     text-align: center;
     background: transparent;
 }
+.listaProdutos{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
 
 .cardProduto {
     background-color: white;
@@ -105,7 +116,7 @@ select {
 }
 
 .cardProduto img {
-    width: 250px;
+    width: 280px;
     height: 100%;
     object-fit: cover;
     border-right: 1px solid #ddd;
@@ -160,7 +171,6 @@ select {
     border: 1px solid gray;
     border-radius: 4px;
     padding: 8px 12px;
-    font-size: 14px;
     color: gray;
     font-size: 20px;
     cursor: pointer;
