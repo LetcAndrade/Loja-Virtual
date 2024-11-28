@@ -1,0 +1,98 @@
+.voltar-para-produtos {
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 1rem;
+  }
+  
+  .voltar-para-produtos a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 2rem;
+    font-weight: 700;
+  }
+
+  .voltar-para-produtos a:hover{
+    text-decoration: none;
+    color: #4a8f67;
+  }
+
+  .Produto {
+    background-color: white;
+    margin: 1rem ;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    height: 38rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-self: center;
+}
+
+.Produto img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.Descricao {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.Descricao h2 {
+    font-size: 25px;
+    margin: 0 0 8px;
+    color: #2e7d32;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.Descricao p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+.Valor {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem ;
+    align-items:flex-start;
+}
+
+.Valor span {
+    font-size: 32px;
+    font-weight:500;
+    color: #212422b7;
+    padding-top: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Valor button {
+    background: none;
+    margin: 0;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 26px;
+    color: gray;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.Valor button:hover {
+    background-color: #4b4b4b34;
+    color: rgba(0, 0, 0, 0.623);
+}

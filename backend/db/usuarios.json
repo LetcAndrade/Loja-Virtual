@@ -46,5 +46,11 @@
     "username": "Leticia",
     "email": "lcarneiroandrade3@gmail.com",
     "password": "1234"
+  },
+  {
+    "id": 9,
+    "username": "Teste",
+    "email": "teste@email.com",
+    "password": "1234"
   }
 ]

@@ -95,6 +95,13 @@ select {
     text-align: center;
     background: transparent;
 }
+.listaProdutos{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
 
 .cardProduto {
     background-color: white;
@@ -109,7 +116,7 @@ select {
 }
 
 .cardProduto img {
-    width: 250px;
+    width: 280px;
     height: 100%;
     object-fit: cover;
     border-right: 1px solid #ddd;
@@ -164,7 +171,6 @@ select {
     border: 1px solid gray;
     border-radius: 4px;
     padding: 8px 12px;
-    font-size: 14px;
     color: gray;
     font-size: 20px;
     cursor: pointer;

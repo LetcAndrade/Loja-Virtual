@@ -10,6 +10,7 @@ import Cadastro from './telas/Cadastro.jsx';
 import Principal from './telas/Principal.jsx';
 import Produto from './telas/Produto.jsx';
 import Conta from './telas/Conta.jsx';
+import Carrinho from './telas/Carrinho.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,21 +31,19 @@ const router = createBrowserRouter([
         element: <Principal/>
       },
       {
-        path: 'Produto',
+        path: 'Produto/:id',
         element: <Produto/>
       },
       {
         path: 'Conta',
         element: <Conta/>
       },
+      {
+        path: 'Carrinho',
+        element: <Carrinho/>
+      },
     ]
   },
-
-  /*
-  {
-    path: 'cursos/:nome',
-    element: <ListaCursos />
-  }*/
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
