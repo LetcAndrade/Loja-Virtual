@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Principal.css';
 
 function Principal() {
-  const [cartCount, setCartCount] = useState([]);
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
 
@@ -30,17 +29,7 @@ function Principal() {
     }
   }, [navigate]);
 
-
-  const addToCart = (product) => {
-    if (cartCount.some((item) => item.id === product.id)) {
-      // Remover do carrinho
-      setCartCount(cartCount.filter((item) => item.id !== product.id));
-    } else {
-      // Adicionar ao carrinho
-      setCartCount([...cartCount, product]);
-    }
-  };
-  
+  //Sair da conta
   const handleLogout = () => {
     localStorage.removeItem('isAuthenticated');
     navigate('/');
@@ -65,27 +54,11 @@ function Principal() {
               alt="Carrinho de Compras"
             />
           </Link>
-            {cartCount > 0 && <div className="bolinha">{cartCount}</div>}
           </div>
         </div>
 
         <div className="produtos">
           <p>Produtos</p>
-          <div className="filtro">
-            <img
-              htmlFor="opcoes"
-              src="https://cdn-icons-png.flaticon.com/512/14/14309.png"
-              alt="Filtro"
-            />
-            <select id="opcoes" name="opcoes">
-              <option value="opcao1">Tudo</option>
-              <option value="opcao2">Eletronicos</option>
-              <option value="opcao3">Sapatos</option>
-              <option value="opcao4">Variados</option>
-              <option value="opcao5">Mobília</option>
-              <option value="opcao6">Roupas</option>
-            </select>
-          </div>
         </div>
 
         <div className="listaProdutos">
@@ -104,11 +77,7 @@ function Principal() {
                 <p>{product.description}</p>
                 <div className="cardValor">
                   <span>${product.price.toFixed(2)}</span>
-                  <button onClick={() => addToCart(product)}>
-                    {cartCount.some((item) => item.id === product.id)
-                      ? 'Remover'
-                      : 'Adicionar'}
-                  </button>
+                  <button>Adicionar</button>
                 </div>
               </div>
             </div>
@@ -116,7 +85,7 @@ function Principal() {
         </div>
       </div>
       <footer>
-        <p>Feito por Isadora, Leticia e Melissa, Disponível no <a href="https://github.com/LetcAndrade/Loja-Virtual">GitHub</a></p>
+        <p>Feito por Isadora e Leticia. Disponível no <a href="https://github.com/LetcAndrade/Loja-Virtual">GitHub</a></p>
       </footer>
     </>
   );

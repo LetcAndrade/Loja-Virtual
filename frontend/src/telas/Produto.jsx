@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import '../styles/Produto.css';
 
 function Produto() {
-  const { id } = useParams(); // Obtém o ID do produto da URL
+  const { id } = useParams(); // Obtém o ID do produto 
   const [product, setProduct] = useState(null); // Armazena os dados do produto
   const navigate = useNavigate();
 
@@ -84,7 +84,7 @@ function Produto() {
       </div>
       <footer>
         <p>
-          Feito por Isadora, Leticia e Melissa, Disponível no{' '}
+          Feito por Isadora e Leticia. Disponível no{' '}
           <a href="https://github.com/LetcAndrade/Loja-Virtual">GitHub</a>
         </p>
       </footer>
