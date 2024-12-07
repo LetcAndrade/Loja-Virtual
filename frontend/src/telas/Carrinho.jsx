@@ -73,6 +73,7 @@ function Carrinho() {
         </div>
 
         <h1>Carrinho de Compras</h1>
+        <div className='listaProdutos'>
         {cart.length === 0 ? (
           <p className="msg-carrinho">Seu carrinho está vazio.</p>
         ) : (
@@ -91,6 +92,7 @@ function Carrinho() {
           </ul>
         )}
         <button className="enviar-pedido">ENVIAR PEDIDO</button>
+      </div>
       </div>
     </>
   );
