@@ -11,6 +11,7 @@ import Principal from './telas/Principal.jsx';
 import Produto from './telas/Produto.jsx';
 import Conta from './telas/Conta.jsx';
 import Carrinho from './telas/Carrinho.jsx';
+import Finalizado from './telas/Finalizado.jsx';
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: 'Carrinho',
         element: <Carrinho/>
+      },
+      {
+        path: 'Finalizado',
+        element: <Finalizado/>
       },
     ]
   },

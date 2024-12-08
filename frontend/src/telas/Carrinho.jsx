@@ -91,7 +91,16 @@ function Carrinho() {
             ))}
           </ul>
         )}
-        <button className="enviar-pedido">ENVIAR PEDIDO</button>
+         {cart.length > 0 && (
+          <button className="enviar-pedido" onClick={() => {
+            setCart([]); 
+            localStorage.removeItem('cart'); 
+            navigate('/Finalizado');
+            }}
+          >
+          ENVIAR PEDIDO
+          </button>
+)}
       </div>
       </div>
       <footer>

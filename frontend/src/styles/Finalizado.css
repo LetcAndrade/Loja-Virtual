@@ -1,0 +1,17 @@
+.imagem-Check{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem 0;
+}
+
+.imagem-Check img{
+  width: 15rem;
+  height: auto;
+}
+
+.imagem-Check p{
+  font-size: xx-large;
+  }
