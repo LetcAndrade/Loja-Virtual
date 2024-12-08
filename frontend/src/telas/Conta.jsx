@@ -202,7 +202,7 @@ function Conta() {
         )}
       </div>
       <footer>
-        <p>Feito por Isadora, Leticia e Melissa, Disponível no <a href="https://github.com/LetcAndrade/Loja-Virtual">GitHub</a></p>
+        <p>Feito por Isadora e Leticia. Disponível no <a href="https://github.com/LetcAndrade/Loja-Virtual">GitHub</a></p>
       </footer>
     </>
   );

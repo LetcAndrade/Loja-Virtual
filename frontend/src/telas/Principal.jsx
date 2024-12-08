@@ -12,7 +12,7 @@ function Principal() {
       try {
         const response = await fetch('https://api.escuelajs.co/api/v1/products');
         const data = await response.json();
-        setProducts(data);
+        setProducts(data.slice(0, 45));
       } catch (error) {
         console.error('Erro ao buscar os produtos:', error);
       }

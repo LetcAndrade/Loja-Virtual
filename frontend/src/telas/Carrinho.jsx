@@ -94,6 +94,12 @@ function Carrinho() {
         <button className="enviar-pedido">ENVIAR PEDIDO</button>
       </div>
       </div>
+      <footer>
+        <p>
+          Feito por Isadora e Leticia. Disponível no{' '}
+          <a href="https://github.com/LetcAndrade/Loja-Virtual">GitHub</a>
+        </p>
+      </footer>
     </>
   );
 }
