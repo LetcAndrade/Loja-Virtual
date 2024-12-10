@@ -110,6 +110,7 @@ app.delete('/conta/:id', (req, res) => {
     }
   });
 
+
   //atualizar o e-mail atual de um usuário
   app.patch('/conta/:id/email', (req, res) => {
     const userId = parseInt(req.params.id);
@@ -172,39 +173,6 @@ app.delete('/conta/:id', (req, res) => {
       } catch (err) {
         console.error(err);
         res.status(500).json({ message: 'Erro ao atualizar o Nome do usuário' });
-      }
-    });
-  
-
-     //atualizar a senha atual de um usuário
-     app.patch('/conta/:id/password', (req, res) => {
-      const userId = parseInt(req.params.id);
-      const { password } = req.body;
-    
-      if (!password) 
-      {
-        return res.status(400).json({ message: 'O nome é obrigatório' });
-      }
-    
-      try {
-        const usuarios = fs.readFileSync('./db/usuarios.json', 'utf-8');
-        const usuariosJson = JSON.parse(usuarios);
-    
-        const usuarioIndex = usuariosJson.findIndex(user => user.id === userId);
-    
-        if (usuarioIndex === -1) 
-       {
-          return res.status(404).json({ message: 'Usuário não encontrado' });
-        }
-    
-        usuariosJson[usuarioIndex].password = password;
-    
-        fs.writeFileSync('./db/usuarios.json', JSON.stringify(usuariosJson, null, 2));
-    
-        res.status(200).json({ message: 'Senha atualizada com sucesso' });
-      } catch (err) {
-        console.error(err);
-        res.status(500).json({ message: 'Erro ao atualizar a senha do usuário' });
       }
     });
   

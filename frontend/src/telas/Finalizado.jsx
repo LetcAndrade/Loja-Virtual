@@ -13,6 +13,13 @@ function Finalizado() {
     }
   }, [navigate]);
 
+     // Realiza logout do usuário
+     const handleLogout = () => {
+      localStorage.removeItem('isAuthenticated'); // Remove autenticação do localStorage
+      navigate('/'); // Redireciona para a página inicial
+    };
+  
+
   return (
     <>
       <div className="pag">
@@ -28,7 +35,7 @@ function Finalizado() {
           </Link>
 
           {/* Botão de logout */}
-          <p onClick={() => localStorage.removeItem('isAuthenticated')}>Sair</p>
+          <p onClick={handleLogout}>Sair</p>
         </div>
 
         <div className='imagem-Check'>

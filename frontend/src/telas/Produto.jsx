@@ -84,7 +84,6 @@ function Produto() {
             <p>{product.description}</p> {/* Descrição do produto */}
             <div className="Valor">
               <span>${product.price.toFixed(2)}</span> {/* Preço formatado */}
-              <button>Adicionar</button> {/* Botão para adicionar ao carrinho (não implementado) */}
             </div>
           </div>
         </div>

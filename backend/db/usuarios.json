@@ -42,15 +42,9 @@
     "password": "testando123"
   },
   {
-    "id": 8,
-    "username": "Leticia",
-    "email": "lcarneiroandrade3@gmail.com",
-    "password": "1234"
-  },
-  {
     "id": 9,
-    "username": "Teste",
-    "email": "teste@email.com",
+    "username": "Teste Novo",
+    "email": "teste3@email.com",
     "password": "1234"
   },
   {

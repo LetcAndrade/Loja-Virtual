@@ -46,7 +46,8 @@ function Principal() {
   };
 
   // Verifica se um produto já está no carrinho
-  const isProductInCart = (productId) => {
+  const isProductInCart = (productId) => 
+  {
     return cart.some((item) => item.id === productId);
   };
 
@@ -114,11 +115,6 @@ function Principal() {
                   <span>${product.price.toFixed(2)}</span>
                   <button
                     onClick={() => handleAddToCart(product)}
-                    className={
-                      isProductInCart(product.id)
-                        ? 'botao-adicionado' // Classe para produto já adicionado
-                        : 'botao-adicionar' // Classe para produto não adicionado
-                    }
                   >
                     {isProductInCart(product.id) ? 'Adicionado' : 'Adicionar'}
                   </button>
